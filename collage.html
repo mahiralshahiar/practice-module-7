@@ -20,11 +20,17 @@
         }
 
         .vertical-collage img {
-            height: 50%;
+            height: calc((100% - 5px)/2);
         }
 
         .row>div {
             flex: 1;
+        }
+
+        .square-collage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
         }
     </style>
 
@@ -66,6 +72,21 @@
 
             </div>
 
+            <div class="row">
+
+                <div>
+                    <img src="images/F.jpg" alt="">
+                </div>
+                <div class="square-collage">
+                    <img src="images/G.jpg" alt="">
+                    <img src="images/G.jpg" alt="">
+                    <img src="images/G.jpg" alt="">
+                    <img src="images/G.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/H.jpg" alt="">
+                </div>
+            </div>
 
         </section>
 
